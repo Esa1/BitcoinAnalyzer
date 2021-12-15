@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        <title>BitcoinAnalyzer</title>
+    </head>
+    <body>
+        <div class="container grid">
+            <div class="InputArea grid">
+                <div grid>
+                    <label for="RangeStartDate">Start date:</label>
+                    <input type="date" id="RangeStartDate" name="RangeStartDate" required>
+                </div>
+                <div grid>
+                    <label for="RangeEndDate">End date:</label>
+                    <input type="date" id="RangeEndDate" name="RangeEndDate" required>
+                </div>
+            </div>
+            <div class="ResultArea">
+                <span>Longest bearish: </span>3<span id="LongestBearish"></span>
+                <br>
+                <span>Highest trading vol: </span>6<span id="HighestTradingVol"></span>
+                <br>
+                <span>Best day to buy: </span>7<span id="BestDayToBuy"></span>
+                <br>
+                <span>Best day to sell: </span>8<span id="BestDayToSell"></span>
+            </div>
+        </div>
+    </body>
+</html>
