@@ -104,7 +104,7 @@ select {
     margin: 2em;
     padding-inline: 2em;
     margin-inline: auto;
-    max-width: 80rem;
+    max-width: 20rem;
 }
 
 .flex {
@@ -119,4 +119,8 @@ select {
 
 input {
     width: 180px;
+}
+
+button {
+    width: 8rem;
 }

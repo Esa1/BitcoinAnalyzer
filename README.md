@@ -40,3 +40,21 @@ Additional information:
 possible as the day’s price, if you don’t have a datapoint from exactly midnight).
 ● Allow the user of your application to pass the start and end dates of the date range in some way,
 e.g. via input fields in a UI or as parameters to an API.
+
+Use CoinGecko’s public API to get the needed data
+https://www.coingecko.com/en/api/documentation
+You will only need to use the /coins/{id}/market_chart/range endpoint.
+Get historical market data include price, market cap, and 24h volume within a range of timestamp (granularity auto)
+
+Data granularity is automatic (cannot be adjusted)
+1 day from query time = 5 minute interval data
+1 - 90 days from query time = hourly data
+above 90 days from query time = daily data (00:00 UTC)
+
+curl -X 'GET' \
+  'https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=eur&from=1392577232&to=1422577232' \
+  -H 'accept: application/json'
+
+  https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=eur&from=1392577232&to=1422577232
+
+  
